@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <title>Document</title> -->
     <title>Frontend Mentor.io</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,8 +12,11 @@
 </head>
 <body>
     <section class="frame-3">
-        <!-- <img src="/images/blogimage.png" alt="blog image"> --> 
-        <img src="/images/blogimage.png" alt="blog image">
+        <picture>
+            <source media="(max-width: 499px)" srcset="/images/blogimage.png">
+            <source media="(min-width: 500px)" srcset="/images/blogimage-desktop.png">
+            <img src="/images/blogimage.png" alt="blog image">
+        </picture>
         <main>
             <p>Learning</p>
             <p class="publishdate">Published 21 Dec 2023</p>
@@ -24,7 +26,6 @@
         </main>
         <figure>
             <img src="/images/userpic.png" alt="user picture" width="32" height="32">
-            <!-- <figcaption>A picture of the user.</figcaption> -->
             <p class="username">Greg Hooper</p>
         </figure>
     </section>
